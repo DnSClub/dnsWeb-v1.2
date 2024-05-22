@@ -1,10 +1,11 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import HomePage from "./pages/Home/HomePage";
 import ContactPage from "./pages/Contact/ContactPage";
 import ProjectsPage from "./pages/Projects/ProjectsPage";
+import Nav from "./components/Nav/Nav"; // Import Nav
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}>
+        <Nav />
+      </RouterProvider>
     </React.StrictMode>
   );
 }

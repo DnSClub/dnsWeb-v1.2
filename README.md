@@ -9,17 +9,17 @@
 │   └── ...
 └── src
     ├── components
-    │   └── layout
-    │       ├── Layout.js
-    │       ├── Layout.module.css
-    │       ├── MainNavigation.js
-    │       └── MainNavigation.module.css
+    │   └── Nav
+    │       └── Nav.js
     ├── pages
-    │   ├── Contacts.js
-    │   ├── Home.js
-    │   └── Projects.js
-    ├── App.js
+    │   ├── Home
+    │   │   └── HomePage.js
+    │   ├── Contact
+    │   │   └── ContactPage.js
+    │   └── Projects
+    │       └── ProjectsPage.js
     ├── index.css
+    ├── App.js
     └── index.js
 ```
 
