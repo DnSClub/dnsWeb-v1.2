@@ -1,10 +1,10 @@
 import React from "react";
+import AboutUs from "../../components/AboutUs/AboutUs";
 
 function HomePage() {
   return (
     <div className="container">
-      <h1>Home</h1>
-      <h2>I love cheese</h2>
+      <AboutUs />
     </div>
   );
 }

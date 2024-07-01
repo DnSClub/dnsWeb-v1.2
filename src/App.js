@@ -1,34 +1,35 @@
 import * as React from "react";
-import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import HomePage from "./pages/Home/HomePage";
+import Layout from "./Layout";
 import ContactPage from "./pages/Contact/ContactPage";
+import HomePage from "./pages/Home/HomePage";
 import ProjectsPage from "./pages/Projects/ProjectsPage";
-import Nav from "./components/Nav/Nav"; // Import Nav
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "contact",
-    element: <ContactPage />,
-  },
-  {
-    path: "projects",
-    element: <ProjectsPage />,
+    element: <Layout />,
+    children: [
+      { path: "/", element: <HomePage /> },
+      { path: "/contact", element: <ContactPage /> },
+      {
+        path: "/projects",
+        element: <ProjectsPage />,
+      },
+    ],
   },
 ]);
 
 function App() {
   return (
-    <React.StrictMode>
-      <RouterProvider router={router}>
-        <Nav />
-      </RouterProvider>
-    </React.StrictMode>
+    <>
+      <div className="bg-gradient-to-r from-blue-800 via-purple-500 to-pink-600 w-full h-full">
+        <React.StrictMode>
+          <RouterProvider router={router}></RouterProvider>
+        </React.StrictMode>
+      </div>
+    </>
   );
 }
 
