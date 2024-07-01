@@ -1,11 +1,10 @@
 import * as React from "react";
-import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Nav from "./components/Nav/Nav";
 import "./index.css";
-import HomePage from "./pages/Home/HomePage";
 import ContactPage from "./pages/Contact/ContactPage";
+import HomePage from "./pages/Home/HomePage";
 import ProjectsPage from "./pages/Projects/ProjectsPage";
-import Nav from "./components/Nav/Nav"; // Import Nav
 
 const router = createBrowserRouter([
   {
@@ -13,11 +12,11 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "contact",
+    path: "/contact",
     element: <ContactPage />,
   },
   {
-    path: "projects",
+    path: "/projects",
     element: <ProjectsPage />,
   },
 ]);
