@@ -23,9 +23,13 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <React.StrictMode>
-      <RouterProvider router={router}></RouterProvider>
-    </React.StrictMode>
+    <>
+      <div className="bg-gradient-to-r from-blue-800 via-purple-500 to-pink-600 w-full h-full">
+        <React.StrictMode>
+          <RouterProvider router={router}></RouterProvider>
+        </React.StrictMode>
+      </div>
+    </>
   );
 }
 

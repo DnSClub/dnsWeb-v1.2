@@ -1,4 +1,4 @@
-export * from "./AboutUs/ExecData";
+export * from "./AboutUs/ExecDataCard";
 export * from "./AboutUs/ExecInfo";
 export * from "./ContactUs/ContactUs";
 export * from "./Event/Event";

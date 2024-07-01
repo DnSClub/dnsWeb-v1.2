@@ -1,8 +1,8 @@
-import { ExecInfo } from "../../models";
+import { ExecInfoModel } from "../../models";
 
 // need to optimize this later i don't like this
-var data = [
-  new ExecInfo(
+export const data = [
+  new ExecInfoModel(
     "President",
     "Arya",
     "https://www.linkedin.com/in/aryafaghihy/",
@@ -11,7 +11,7 @@ var data = [
     null,
     null
   ),
-  new ExecInfo(
+  new ExecInfoModel(
     "Vice-President & Project Manager",
     "Cohen",
     "https://www.linkedin.com/in/cohen-ter-heide-a12729272/",
@@ -20,16 +20,16 @@ var data = [
     null,
     null
   ),
-  new ExecInfo(
+  new ExecInfoModel(
     "Director of Communications & Multimedia",
     "Song",
     "https://www.linkedin.com/in/songkoh",
     "eka74@sfu.ca",
     "Hello! I'm Song! I'm a Computing Science student at Simon Fraser University who's passionate about everything related to computer science. I find myself drawn to areas like full-stack development, software engineering, data science, product management, and cybersecurity. I love learning and always stay curious about the latest innovations and breakthroughs in technology. Being able to bring creativity to something so technical of a computer is so beautiful to me. On top of that, I enjoy getting creative with digital projects, whether it's working with DNS or video editing for the SFU Computing Student Society social media.",
     "https://www.songk.live",
-    null
+    "../../assets/img/Eunsong.png"
   ),
-  new ExecInfo(
+  new ExecInfoModel(
     "Director of Finance",
     "Saarang",
     "https://www.linkedin.com/in/saaranganand/",
@@ -38,7 +38,7 @@ var data = [
     null,
     null
   ),
-  new ExecInfo(
+  new ExecInfoModel(
     "Director of Events",
     "Sophia",
     "https://www.linkedin.com/in/sophiadontranho/",
@@ -47,7 +47,7 @@ var data = [
     null,
     null
   ),
-  new ExecInfo(
+  new ExecInfoModel(
     "Director of Resources",
     "Sam",
     "https://www.linkedin.com/in/shanglin-zhuang-014487262/",
