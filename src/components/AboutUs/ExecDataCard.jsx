@@ -5,7 +5,7 @@ const ExecDataCard = ({ execData, index }) => {
   return (
     <figure
       className={`flex flex-col md:flex-row justify-center items-start gap-12 w-[90%] md:w-2/3 rounded-2xl shadow-lg p-6 text-white backdrop-blur-2xl bg-white/15 ${
-        isEven ? "flex-row" : "flex-row-reverse"
+        isEven ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
       <img
