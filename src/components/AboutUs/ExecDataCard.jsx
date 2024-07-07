@@ -2,7 +2,7 @@ import React from "react";
 
 const ExecDataCard = ({ execData }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <figure className="max-w-sm rounded overflow-hidden shadow-lg">
       <img
         className="w-full"
         src={`${execData.imagePath}`}
@@ -13,7 +13,7 @@ const ExecDataCard = ({ execData }) => {
         <div className="font-bold text-xl mb-2">{execData.name}</div>
         <p className="text-gray-700 text-base">{execData.description}</p>
       </div>
-    </div>
+    </figure>
   );
 };
 
