@@ -8,7 +8,7 @@ import ProjectsPage from "./pages/Projects/ProjectsPage";
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-blue-800 via-purple-500 to-pink-600 w-full h-full">
+    <div className="bg-custom-gradient w-full h-full">
       <React.StrictMode>
         <BrowserRouter>
           <Routes>
