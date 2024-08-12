@@ -8,7 +8,7 @@ function HomePage() {
     <div className="pb-8">
       <Hero />
       <AboutUs />
-      <Footer />
+      √
     </div>
   );
 }
