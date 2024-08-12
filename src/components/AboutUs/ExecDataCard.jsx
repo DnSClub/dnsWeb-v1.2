@@ -1,4 +1,7 @@
 import React from "react";
+import { MdOutlineEmail } from "react-icons/md";
+import { CiLinkedin } from "react-icons/ci";
+import { CiLink } from "react-icons/ci";
 
 const ExecDataCard = ({ execData, index }) => {
   const isEven = index % 2 === 0;
@@ -14,8 +17,19 @@ const ExecDataCard = ({ execData, index }) => {
         alt={execData.name}
       />
       <div className="flex flex-col gap-4 items-start px-6 py-4">
-        <div className="text-purple-100 font-bold text-3xl md:text-5xl mb-2">{execData.position}</div>
-        <div className="font-medium text-lg md:text-3xl mb-2">{execData.name}</div>
+        <div className="text-purple-100 font-bold text-3xl md:text-5xl mb-2">
+          {execData.position}
+        </div>
+        <div className="font-medium text-lg md:text-3xl mb-2">
+          {execData.name}
+        </div>
+        <div className="font-medium text-lg md:text-3xl mb-2">
+          <a className="flex items-center mb-4">
+            {execData.linkedIn !== null && <MdOutlineEmail />}
+            {execData.linkedIn !== null && <CiLinkedin />}
+            {execData.personalWebsite !== null && <CiLink />}
+          </a>
+        </div>
         <p className="text-base leading-8">{execData.description}</p>
       </div>
     </figure>
