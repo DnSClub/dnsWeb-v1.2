@@ -2,7 +2,7 @@ import React from "react";
 
 function WhoAreWe() {
   return (
-    <header className="flex flex-col xl:flex-row gap-6 md:gap-12 p-6 mb-8 text-white text-lg md:text-2xl backdrop-blur-2xl bg-white/15 w-[90%] md:w-2/3 mx-auto rounded-2xl">
+    <header className="flex flex-col xl:flex-row gap-6 md:gap-12 p-6 mb-8 text-white text-lg md:text-2xl backdrop-blur-2xl bg-white/15 w-[90%] mx-auto rounded-2xl">
       <img
         src="/images/sphere.gif"
         className="flex flex-col xl:flex-row items-start gap-8"
