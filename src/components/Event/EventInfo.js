@@ -2,6 +2,13 @@ import { EventInfoModel } from "../../models";
 
 export const eventData = [
   new EventInfoModel(
+    "DNS x Game Dev Club: Raylib Workshop",
+    "https://github.com/DnSClub/raylib-workshop",
+    "In collaboration with SFU Game Dev Club, participants had the chance of learning the basics of game programming with C++ and the Raylib library, creating the classic game Snake from scratch!",
+    "images/raylib.png",
+    "Sept 2024"
+  ),
+  new EventInfoModel(
     "LIBCOMP.A: A SFU CSSS x DNS Collaboration 2024",
     "https://github.com/DnSClub/Library-Challenge-2024",
     "Our second year collaborating with the SFU Computing Science Student Society for our annual LibComp.A hackathon that featured more than 20+ custom made DNS libraries",
